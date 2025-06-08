@@ -47,7 +47,7 @@ app.get('/auth/tiktok/callback', async (req, res) => {
   console.log('params:', params);
 
   try {
-    const tokenRes = await axios.post('https://open-api.tiktok.com/oauth/access_token/', querystring.stringify(params), {
+    const tokenRes = await axios.post('https://open.tiktokapis.com/v2/oauth/token/', querystring.stringify(params), {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
     });
 
