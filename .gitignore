@@ -27,7 +27,7 @@ build/
 *.pem
 *.key
 *.crt
-*.txt
+*api endpoints.txt
 
 # Ignore local ngrok config
 .ngrok*
