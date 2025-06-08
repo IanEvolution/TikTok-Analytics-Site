@@ -1,13 +1,11 @@
 // Simple Express backend for TikTok OAuth testing
 const express = require('express');
-const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, '../frontEnd')));
-
+// Root route for backend health check
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontEnd/Index.html'));
+  res.send('TikTok Analytics Backend is running!');
 });
 
 // Placeholder for TikTok OAuth callback route
