@@ -1,0 +1,215 @@
+body {
+    font-family: 'mono45-headline', Arial, sans-serif;
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #1a3a2b;
+}
+
+a {
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #e2bc00;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    }
+
+.window {
+    max-width: 1700px;
+    max-height: 1000px;
+    overflow: auto;
+    margin: 48px auto;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 36px 32px 28px 32px;
+    z-index: 2;
+    position: relative;
+    border: none;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.coffee-link {
+    align-self: flex-end;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #FFD600 0%, #e2bc00 100%);
+    color: #222;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 7px 16px 7px 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.2s;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    float: none;
+}
+
+a.coffee-link img {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    margin-right: 8px;
+    box-shadow: none;
+    background: transparent;
+    vertical-align: middle;
+}
+
+a.coffee-link span {
+    font-weight: 400;
+    color: #222;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.12);
+    letter-spacing: 0.5px;
+}
+
+a.coffee-link svg {
+    filter: none;
+    fill: #fff;
+}
+
+a.coffee-link:hover {
+    background: linear-gradient(90deg, #ffe066 0%, #FFD600 100%);
+    color: #222;
+}
+
+h1 {
+    color: #1a3a2b;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #267a4a;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.analytics-section {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+button#get-analytics {
+    background: #0ba360;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 300;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+button#get-analytics:hover {
+    background: #267a4a;
+}
+
+select#category-select {
+    background: #e8f5e9;
+    color: #1a3a2b;
+    border: 1px solid #b2dfdb;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.result-box {
+    background: #f6fff8;
+    color: #267a4a;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 10px 0 0 0;
+    font-size: 1.05rem;
+    min-height: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 1.5px 6px rgba(0,0,0,0.06);
+}
+
+.footer {
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 350;
+    margin-top: 32px;
+    letter-spacing: 0.5px;
+}
+
+.home-link {
+    background: linear-gradient(90deg, #0ba360 0%, #3cba92 100%);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 24px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    align-self: flex-end;
+    float: none;
+}
+
+.home-link:hover {
+    background: linear-gradient(90deg, #267a4a 0%, #0ba360 100%);
+    color: #fff;
+    align-self: flex-end;
+    float: none;
+}
+
+.footer-links {
+    color: #ffffff;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 8px;
+    border-radius: 0;
+    text-shadow: none;
+    display: inline;
+    float: none;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer-links:hover {
+    color: #3d3d3d;
+}
+
+@media (max-width: 700px) {
+    .window {
+        max-width: 98vw;
+        padding: 18px 4vw 18px 4vw;
+    }
+    .result-box {
+        font-size: 0.98rem;
+        padding: 12px 6px;
+    }
+}
