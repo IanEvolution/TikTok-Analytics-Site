@@ -39,6 +39,13 @@ app.get('/auth/tiktok/callback', async (req, res) => {
   };
   console.log('Sending to TikTok:', params);
 
+  // Log the actual values for debugging
+  console.log('client_key:', process.env.CLIENT_KEY);
+  console.log('client_secret:', process.env.CLIENT_SECRET);
+  console.log('code:', code);
+  console.log('redirect_uri:', process.env.TIKTOK_REDIRECT_URI);
+  console.log('params:', params);
+
   try {
     const tokenRes = await axios.post('https://open-api.tiktok.com/oauth/access_token/', querystring.stringify(params), {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
